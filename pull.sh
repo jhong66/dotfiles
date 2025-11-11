@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf ./linux
+
 mkdir -p ./linux
 cp -rf -t ./linux ~/.tmux.conf  ~/.vimrc 
 
