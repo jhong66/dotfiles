@@ -1,0 +1,8 @@
+{
+  "alpha-nvim": { "branch": "main", "commit": "2b3cbcdd980cae1e022409289245053f62fb50f6" },
+  "gruvbox.nvim": { "branch": "main", "commit": "5e0a460d8e0f7f669c158dedd5f9ae2bcac31437" },
+  "lazy.nvim": { "branch": "main", "commit": "db067881fff0fd4be8c00e5bde7492e0e1c77a2f" },
+  "nightfox.nvim": { "branch": "main", "commit": "ba47d4b4c5ec308718641ba7402c143836f35aa9" },
+  "onedarkpro.nvim": { "branch": "main", "commit": "eeac8847a46a02c4de4e887c4c6d34b282060b5d" },
+  "snacks.nvim": { "branch": "main", "commit": "5eea5f94280ef9034c7da8bbb5ec12dc71b6916f" }
+}

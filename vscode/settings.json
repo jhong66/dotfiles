@@ -1,0 +1,235 @@
+{
+  "C_Cpp.default.cppStandard": "c++17",
+  "cmake.configureOnOpen": true,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "editor.accessibilitySupport": "off",
+  "editor.cursorStyle": "line",
+  "editor.formatOnPaste": true,
+  "editor.lineNumbers": "on",
+  "editor.stickyScroll.enabled": false,
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "[Solarized Dark]": {
+      "textMateRules": [
+        {
+          "scope": "variable.language",
+          "settings": {
+            "foreground": "#e6b141"
+          }
+        },
+        {
+          "scope": "markup.list",
+          "settings": {
+            "foreground": "#e6b141"
+          }
+        },
+        {
+          "scope": "support.type",
+          "settings": {
+            "foreground": "#91c788"
+          }
+        },
+        {
+          "scope": "keyword",
+          "settings": {
+            "foreground": "#4cc9f0"
+          }
+        },
+        {
+          "scope": "string.regexp",
+          "settings": {
+            "foreground": "#f39a9d"
+          }
+        },
+        {
+          "scope": "constant.numeric",
+          "settings": {
+            "foreground": "#ff5d8f"
+          }
+        },
+        {
+          "scope": "constant.character",
+          "settings": {
+            "foreground": "#ff5d8f"
+          }
+        },
+        {
+          "scope": "constant.other",
+          "settings": {
+            "foreground": "#ff5d8f"
+          }
+        },
+        {
+          "scope": "variable.other.constant",
+          "settings": {
+            "foreground": "#ff5d8f"
+          }
+        },
+        {
+          "scope": "constant.language",
+          "settings": {
+            "foreground": "#c56a4e"
+          }
+        },
+        {
+          "scope": "punctuation.section.embedded.end",
+          "settings": {
+            "foreground": "#c169d3"
+          }
+        },
+        {
+          "scope": "punctuation.section.embedded.begin",
+          "settings": {
+            "foreground": "#c169d3"
+          }
+        },
+        {
+          "scope": "entity.name.namespace",
+          "settings": {
+            "foreground": "#c169d3"
+          }
+        }
+      ],
+      "types": "#91c788",
+      "variables": "#e6b141"
+    }
+  },
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "excalidraw.theme": "light",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "git.ignoreLegacyWarning": true,
+  "gitlens.currentLine.enabled": false,
+  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-18.0.2.1",
+  "jupyter.askForKernelRestart": false,
+  "materialTheme.accent": "Teal",
+  "notebook.output.scrolling": true,
+  "oneDarkPro.editorTheme": "oneDarkPro",
+  "pylint.args": [
+    "\"--max-line-length=120\""
+  ],
+  "python.terminal.executeInFileDir": true,
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh",
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ],
+  "remote.SSH.remotePlatform": {
+    "*-aistudio": "linux",
+    "*.aistudio": "linux",
+    "*.gitpod.io": "linux",
+    "angelshark.ics.cs.cmu.edu": "linux",
+    "autobot.vision.cs.cmu.edu": "linux",
+    "bambooshark.ics.cs.cmu.edu": "linux",
+    "custom-minimal-aistudio": "linux",
+    "data-sci-aistudio": "linux",
+    "data-sci-fb6be6e3-aistudio": "linux",
+    "datasci-8478431f-aistudio": "linux",
+    "deep-learning-f7e3634e-aistudio": "linux",
+    "dl-7f945b97-aistudio": "linux",
+    "dl-aistudio": "linux",
+    "dl-b8070888-aistudio": "linux",
+    "ds-a4275854-aistudio": "linux",
+    "genai-aistudio": "linux",
+    "lemonshark.ics.cs.cmu.edu": "linux",
+    "min-aistudio": "linux",
+    "min-c00de602-aistudio": "linux",
+    "min-d9ba5db8-aistudio": "linux",
+    "min-eae0f306-aistudio": "linux",
+    "min-gpu-aistudio": "linux",
+    "min123-07a00190-aistudio": "linux",
+    "min2-aistudio": "linux",
+    "minimal-504ce8e4-aistudio": "linux",
+    "minimal-8d3c6178-aistudio": "linux",
+    "minimal-aistudio": "linux",
+    "minimal-bb3d69dc-aistudio": "linux",
+    "minimal-f7792fa5-aistudio": "linux",
+    "minimal-f99a9e4a-aistudio": "linux",
+    "nemo-f2acf533-aistudio": "linux",
+    "rapids-59f78c43-aistudio": "linux",
+    "rapids-725999f9-aistudio": "linux",
+    "rapids-86fcb815-aistudio": "linux",
+    "rapids-aistudio": "linux",
+    "rapids-notebooks-workspace-49ec52ac-aistudio": "linux",
+    "sed-ut-perspiciatis-unde-omnis-iste-natus-error-sit-voluptatem-accusantium-doloremque-laudantium-totam-rem-aperiam-eaque-ipsa-quae-ab-illo-inventore-veritatis-0c41f825-aistudio": "linux",
+    "sed-ut-perspiciatis-unde-omnis-iste-natus-error-sit-voluptatem-accusantium-doloremque-laudantium-totam-rem-aperiam-eaque-ipsa-quae-ab-illo-inventore-veritatiss-6113a044-aistudio": "linux",
+    "sed-ut-perspiciatis-unde-omnis-iste-natus-error-sit-voluptatem-accusantium-doloremque-laudantium-totam-rem-aperiam-eaque-ipsa-quae-ab-illo-inventore-veritatisss-7f8d408b-aistudio": "linux",
+    "sed-ut-perspiciatis-unde-omnis-iste-natus-error-sit-voluptatem-accusantium-doloremque-laudantium-totam-rem-aperiam-eaque-ipsa-quae-ab-illo-inventore-veritatissss260-0c3f8bff-aistudio": "linux",
+    "sed-ut-perspiciatis-unde-omnis-iste-natus-error-sit-voluptatem-accusantium-doloremque-laudantium-totam-rem-aperiam-eaque-ipsa-quae-ab-illo-inventore-veritatisssss-2295e409-aistudio": "linux",
+    "sed-ut-perspiciatis-unde-omnis-iste-natus-error-sit-voluptatem-accusantium-doloremque-laudantium-totam-rem-aperiam-eaque-ipsa-quae-ab-illo-inventore-veritatisst260-20a0cd86-aistudio": "linux",
+    "unix.andrew.cmu.edu": "linux",
+    "vader.pc.cs.cmu.edu": "linux",
+    "workspace-name-with-a-lot-of-characters-e6c070ed-aistudio": "linux",
+    "workspace-with-a-long-long-long-long-long-long-name-218c2b0f-aistudio": "linux",
+    "yoda": "linux"
+  },
+  "remote.SSH.useFlock": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.rightClickBehavior": "default",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "terragrunt-navigator.featureToggles": {},
+  "todohighlight.keywords": [
+    {
+      "backgroundColor": "#b58a26cc",
+      "text": "TODO:"
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-d>": true,
+    "<C-v>": false,
+    "<C-x>": false
+  },
+  "vim.mouseSelectionGoesIntoVisualMode": false,
+  "vim.startInInsertMode": true,
+  "workbench.colorCustomizations": {
+    "[Material Theme]": {
+      "activityBar.activeBorder": "#80CBC4",
+      "activityBarBadge.background": "#80CBC4",
+      "breadcrumb.activeSelectionForeground": "#80CBC4",
+      "editor.findMatchBorder": "#80CBC4",
+      "editorSuggestWidget.highlightForeground": "#80CBC4",
+      "editorWidget.border": "#80CBC4",
+      "editorWidget.resizeBorder": "#80CBC4",
+      "list.activeSelectionForeground": "#80CBC4",
+      "list.highlightForeground": "#80CBC4",
+      "list.inactiveSelectionForeground": "#80CBC4",
+      "menu.selectionForeground": "#80CBC4",
+      "menubar.selectionForeground": "#80CBC4",
+      "notificationLink.foreground": "#80CBC4",
+      "panelTitle.activeBorder": "#80CBC4",
+      "pickerGroup.foreground": "#80CBC4",
+      "progressBar.background": "#80CBC4",
+      "scrollbarSlider.activeBackground": "#80CBC450",
+      "selection.background": "#80CBC440",
+      "settings.headerForeground": "#80CBC4",
+      "settings.modifiedItemIndicator": "#80CBC4",
+      "statusBarItem.remoteBackground": "#80CBC4",
+      "tab.activeBorder": "#80CBC4",
+      "textLink.foreground": "#80CBC4"
+    },
+    "[Solarized Dark]": {
+      "editorCursor.foreground": "#80CBC4"
+    }
+  },
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.local": "default"
+  }
+}
