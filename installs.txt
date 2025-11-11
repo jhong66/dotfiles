@@ -1,0 +1,12 @@
+Things that need to be installed on Linux
+
+(TODO: automate with script)
+
+- TPM
+	- tmux-powerline
+	- tmux-sensible
+
+- Neovim
+
+- Lua
+- Luarocks
