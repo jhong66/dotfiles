@@ -1,4 +1,6 @@
 # Personal dotfiles collection
+![Setup Demo](assets/demo.png)
+
 Configuration files for various dev things plus scripts for quick environment setup.
 
 ## Current contents:
