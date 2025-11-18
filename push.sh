@@ -30,7 +30,7 @@ cp -ri -t ~/ .tmux.conf .vimrc
 
 if [ ! $run_simple ]; then
 	cd .config
-	mkdir ~/.config
+	mkdir -p ~/.config
 	cp -ri -t ~/.config/ tmux-powerline nvim
 fi
 

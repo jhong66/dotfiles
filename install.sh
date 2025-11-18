@@ -1,9 +1,17 @@
-#!/bin/bash
+#!/bin/bash -i
 
 CYAN='\033[0;36m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 BASE_DIR=$PWD
+
+trap 'exit 130' INT
+
+printf "${CYAN}== INSTALLING: APT ESSENTIALS ==\n${NC}"
+export DEBIAN_FRONTEND=noninteractive
+export TZ="America/Los_Angeles"
+apt update -qq -y
+apt install -qq -y git curl build-essential wget unzip tmux vim
 
 # Tmux package manager
 printf "${CYAN}== INSTALLING: TPM ==\n${NC}"
@@ -27,17 +35,22 @@ curl -L -R -O https://www.lua.org/ftp/lua-5.4.8.tar.gz
 tar -C /opt -zxf lua-5.4.8.tar.gz
 cd /opt/lua-5.4.8
 make all test
-cd $BASE
+cd $BASE_DIR
+
+if ! grep -q 'export PATH="$PATH:/opt/lua-5.4.8/src"' ~/.bashrc; then
+	echo 'export PATH="$PATH:/opt/lua-5.4.8/src"' >> ~/.bashrc
+fi
 rm -rf lua-5.4.8.tar.gz
+source ~/.bashrc
 
 # LuaRocks
 printf "${CYAN}== INSTALLING: LUAROCKS ==\n${NC}"
 wget https://luarocks.org/releases/luarocks-3.12.2.tar.gz
 tar -C /opt -zxpf luarocks-3.12.2.tar.gz
 cd /opt/luarocks-3.12.2
-./configure && make && make install
+./configure --with-lua-include="/opt/lua-5.4.8/src" && make && make install
 luarocks install luasocket
-cd $BASE
+cd $BASE_DIR
 rm -rf luarocks-3.12.2.tar.gz
 
-printf "${GREEN}== ALL DONE!! ==\n${NC}"
+printf "${GREEN}== ALL DONE! ==\n${NC}"
