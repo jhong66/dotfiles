@@ -26,8 +26,24 @@ while getopts "hs" option; do
 done
 
 cd linux
+
+# Custom bash settings
+while IFS= read -r line; do
+	# Avoid extra newlines
+	last_line=$(tail -n 1 ~/.bashrc)
+	if [[ $line == "" ]] && [[ $last_line != "" ]] ; then
+		echo $line >> ~/.bashrc
+
+	elif ! grep -q "$line" ~/.bashrc ; then
+		echo $line >> ~/.bashrc
+	fi
+done < ".bashrc"
+
+
+# tmux and vim config
 cp -ri -t ~/ .tmux.conf .vimrc
 
+# neovim and tmux-powerline config
 if [ ! $run_simple ]; then
 	cd .config
 	mkdir -p ~/.config
