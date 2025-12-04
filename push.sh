@@ -25,9 +25,9 @@ while getopts "hs" option; do
 	esac
 done
 
-cd linux
-
 # Custom bash settings
+cd static
+
 while IFS= read -r line; do
 	# Avoid extra newlines
 	last_line=$(tail -n 1 ~/.bashrc)
@@ -41,6 +41,7 @@ done < ".bashrc"
 
 
 # tmux and vim config
+cd ../linux
 cp -ri -t ~/ .tmux.conf .vimrc
 
 # neovim and tmux-powerline config
