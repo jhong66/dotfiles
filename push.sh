@@ -32,10 +32,10 @@ while IFS= read -r line; do
 	# Avoid extra newlines
 	last_line=$(tail -n 1 ~/.bashrc)
 	if [[ $line == "" ]] && [[ $last_line != "" ]] ; then
-		echo $line >> ~/.bashrc
+		printf $line >> ~/.bashrc
 
-	elif ! grep -q "$line" ~/.bashrc ; then
-		echo $line >> ~/.bashrc
+	elif ! grep -qF "$line" ~/.bashrc ; then
+		printf $line >> ~/.bashrc
 	fi
 done < ".bashrc"
 
