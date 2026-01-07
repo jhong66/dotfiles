@@ -42,7 +42,10 @@ done < ".bashrc"
 
 # tmux and vim config
 cd ../linux
-cp -ri -t ~/ .tmux.conf .vimrc
+cp -ri -t ~/ .tmux.conf .vimrc 
+
+mkdir -p ~/.tmux
+cp -ri -t ~/.tmux/ .tmux/welcome.sh
 
 # neovim and tmux-powerline config
 if [ ! $run_simple ]; then
