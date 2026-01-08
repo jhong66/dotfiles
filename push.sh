@@ -49,8 +49,7 @@ cp -ri -t ~/.tmux/ .tmux/*
 
 # neovim and tmux-powerline config
 if [ ! $run_simple ]; then
-	cd .config
 	mkdir -p ~/.config
-	cp -ri -t ~/.config/ tmux-powerline nvim
+	cp -ri -t ~/.config/ ./.config/*
 fi
 
