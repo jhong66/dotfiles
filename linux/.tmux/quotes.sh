@@ -1,3 +1,6 @@
+# List of quotes that randomly show in the tmux welcome message
+# In a sh file just for highlighting purposes
+
 # ===== SCI-FI BOOKS =====
 
 # A Canticle for Leibowitz (Walter M. Miller Jr.)
