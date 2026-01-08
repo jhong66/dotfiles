@@ -89,8 +89,7 @@ if [ "$TERM_WIDTH" -lt "$LOGO_WIDTH" ]; then
 	spacing=$(( MINI_LOGO_WIDTH / 2 + 5 ))	
 
 	printf "%${spacing}s%s" "$INTRO_TEXT"
-  printf "$C_LOGO_FRONT"
-	printf "$LOGO_MINI"
+	printf "${C_LOGO_FRONT}${LOGO_MINI}${NC}"
 	echo
 	exit
 fi
