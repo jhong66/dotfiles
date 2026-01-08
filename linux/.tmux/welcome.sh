@@ -51,7 +51,8 @@ for conf in "${color_changes[@]}"; do
 	p="${conf% *}"
 	offset="${conf#* }"
 	end=$((p+offset))
-	tmux_ascii=$(printf "%s${C_LOGO_FRONT}%s${C_LOGO_BACK}%s" "${tmux_ascii:0:p}" "${tmux_ascii:p:offset}" "${tmux_ascii:end}")
+	tmux_ascii=$(printf "%s${C_LOGO_FRONT}%s${C_LOGO_BACK}%s" \
+						 "${tmux_ascii:0:p}" "${tmux_ascii:p:offset}" "${tmux_ascii:end}")
 done
 
 width=$(tput cols)
@@ -70,9 +71,23 @@ echo "$tmux_ascii" | while IFS= read -r line; do
 	center "$line"
 done
 printf "${NC}"
-
-# TODO: switch to quotes
 echo
-center "hello world!"
+
+max_line_len=60
+
+# get quotes from square brackets
+# randomly pick one
+# format text
+# wrap to max line length
+quote=$( \
+    grep -Po '(?<=\[).*(?=\])' ~/.tmux/quotes.sh \
+	| shuf -n 1 \
+	| xargs -d '\n' -I {} printf "{}\n" \
+	| fold -s -w $max_line_len \
+)
+
+echo "$quote" | while IFS= read -r line; do
+	center "$line"
+done
 echo
 
