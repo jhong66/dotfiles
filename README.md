@@ -17,5 +17,5 @@ Configuration files for various dev things plus scripts for quick environment se
 - Custom Solarized Dark highlighting colors
 - Modified vim extension keybindings
 
-# Bashrc
+### Bashrc
 - Adjusted ls colors
