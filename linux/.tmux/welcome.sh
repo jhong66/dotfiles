@@ -9,12 +9,12 @@ NC='\033[0m' # No Color
 C_LOGO_FRONT=$GREEN
 C_LOGO_BACK=$GRAY
 
-WIDTH=$(tput cols)
+TERM_WIDTH=$(tput cols)
 
 INTRO_TEXT="WELCOME TO"
 
 # ascii font: ogre
-tmux_logo='
+TMUX_LOGO='
                               /\                             
                            <_//\\_>                          
                       ______//  \\______                     
@@ -28,7 +28,12 @@ tmux_logo='
                     /         ||          \                  
 '
 
-logo_mini='
+# TODO: Logo width is 61...make a more round number later
+# (will have to change color offsets)
+LOGO_WIDTH=$(printf "$TMUX_LOGO" | head -2 | wc -m)
+LOGO_WIDTH=$((LOGO_WIDTH - 2))
+
+LOGO_MINI='
  _____           __  __
 /__   \/\/\  /\ /\ \/ /
   / /\/    \/ / \ \  / 
@@ -36,10 +41,8 @@ logo_mini='
  \/  \/    \/\___/_/\_\
 '
 
-# TODO: Logo width is 61...make a more round number later
-# (will have to change color offsets)
-LOGO_WIDTH=$(printf "$tmux_logo" | head -2 | wc -m)
-LOGO_WIDTH=$((LOGO_WIDTH - 2))
+MINI_LOGO_WIDTH=$(printf "$LOGO_MINI" | head -2 | wc -m)
+MINI_LOGO_WIDTH=$(( MINI_LOGO_WIDTH - 2 ))
 
 # TODO: automatically deal with color code offsets so positions don't change
 # Can use ansi 255 colors after this
@@ -68,36 +71,38 @@ for conf in "${color_changes[@]}"; do
 	p="${conf% *}"
 	offset="${conf#* }"
 	end=$((p+offset))
-	tmux_logo=$(printf "%s${C_LOGO_FRONT}%s${C_LOGO_BACK}%s" \
-						 "${tmux_logo:0:p}" "${tmux_logo:p:offset}" "${tmux_logo:end}")
+	TMUX_LOGO=$(printf "%s${C_LOGO_FRONT}%s${C_LOGO_BACK}%s" \
+						 "${TMUX_LOGO:0:p}" "${TMUX_LOGO:p:offset}" "${TMUX_LOGO:end}")
 done
 
 center() {
 	# Don't count color codes in length
 	len=$(echo "$1" | sed "s/$(echo -e "\e")[^m]*m//g");
-	printf "%$(((WIDTH-${#len})/2))s%s\n" "" "$1"
+	printf "%$(((TERM_WIDTH-${#len})/2))s%s\n" "" "$1"
 }
 
-if [ "$WIDTH" -lt "$LOGO_WIDTH" ]; then
-	mini_logo_width=$(printf "$logo_mini" | head -2 | wc -m)
-	mini_logo_width=$(( mini_logo_width - 2 ))
-	spacing=$(( mini_logo_width / 2 + 5 ))	
+# CONSTANTS
+# =======================
+# LOGIC
 
-	printf "%${spacing}s%s" "${INTRO_TEXT}"
-  printf "${C_LOGO_FRONT}"
-	printf "$logo_mini"
+if [ "$TERM_WIDTH" -lt "$LOGO_WIDTH" ]; then
+	spacing=$(( MINI_LOGO_WIDTH / 2 + 5 ))	
+
+	printf "%${spacing}s%s" "$INTRO_TEXT"
+  printf "$C_LOGO_FRONT"
+	printf "$LOGO_MINI"
 	echo
 	exit
 fi
 
 echo
-center "${INTRO_TEXT}"
+center "$INTRO_TEXT"
 
-printf "${C_LOGO_BACK}"
-echo "$tmux_logo" | while IFS= read -r line; do
+printf "$C_LOGO_BACK"
+echo "$TMUX_LOGO" | while IFS= read -r line; do
 	center "$line"
 done
-printf "${NC}"
+printf "$NC"
 echo
 
 max_line_len=$(( LOGO_WIDTH - 2 ))
