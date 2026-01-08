@@ -5,6 +5,7 @@ vim.cmd("colorscheme nightfox")
 vim.cmd([[
 	set runtimepath^=~/.vim runtimepath+=~/.vim/after
 	let &packpath = &runtimepath
+	filetype plugin indent on
 	source ~/.vimrc
 ]])
 
