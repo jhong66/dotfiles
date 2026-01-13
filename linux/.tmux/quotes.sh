@@ -22,7 +22,6 @@
 
 # Cat's Cradle (Kurt Vonnegut)
 [Anyone unable to understand how a useful religion can be founded on lies will not understand this book either.]
-[He just came to work the next day and looked for things to play with and think about, and everything there was to play with and think about had something to do with the bomb.]
 [Americans are forever searching for love in forms it never takes, in places it can never be. It must have something to do with the vanished frontier.]
 [Truth was the enemy of the people, because the truth was so terrible, so Bokonon made it his business to provide the people with better and better lies.]
 
@@ -42,22 +41,24 @@
 
 # The Lathe of Heaven (Ursula K. Le Guin)
 [Love doesn't just sit there, like a stone, it has to be made, like bread; re-made all the time, made new.]
-[Are there really people without resentment, without hate...Who recognize evil, and resist evil, and yet are utterly unaffected by it?]
 
 # All You Need Is Kill (Hiroshi Sakurazaka)
 [If there's heaven, it's a cold place. A dark place. A lonely place.]
 [A machine doesn't get distracted. A machine doesn't cry. A machine wears the same bitter smile day in, day out.]
+
+# Roadside Picnic (Arkady & Boris Strugatsky)
+[HAPPINESS, FREE, FOR EVERYONE, AND LET NO ONE BE FORGOTTEN!]
+[Look into my soul...Figure out yourself what I want - because I know it can't be bad!]
 
 # ===== OTHER FICTION BOOKS =====
 
 # Red Dragon (Thomas Harris)
 [How seldom we recognize the sound when the bolt of our fate slides home.]
 [Oh Reba, I can't stand to watch you burn.]
-[In the Green Machine there is no mercy; WE make mercy, manufacture it in the parts that have overgrown our basic reptile brain.]
 
 # Discworld (Terry Pratchett)
 # -- Guards! Guards!
-[You have the right to remain silent.\nYou have the right to be summarily thrown into a piranha tank.\nYou have the right to trial by ordeal.]
+[You have the right to remain silent. You have the right to be summarily thrown into a piranha tank. You have the right to trial by ordeal.]
 [I believe you find life such a problem because you think there are the good people and the bad people. You're wrong, of course. There are, always and only, the bad people, but some of them are on opposite sides.]
 # -- Mort
 [THERE'S NO JUSTICE. THERE'S JUST ME.]
@@ -70,38 +71,54 @@
 [When does a war end? When can I say your name and have it mean only your name and not what you left behind?]
 [...that's what you give anyone who sees you I thought. You take their hatred head on, and you cross it, like a bridge, to face them, to enter them.]
 
+# House of Leaves (Mark Z. Danielewski)
+[Darkness is impossible to remember...Darkness never satisfies. Especially if it takes something away, which it almost always invariably does.]
+[there's no second i've lived you can't call your own]
+
 # ===== NON-FICTION BOOKS =====
 
 # Godel, Escher, Bach (Douglas R. Hofstadter)
 [When we create a program that passes the Turing test, we will see a 'heart' even though we know it's not there.]
-[I was deeply thrilled by the knowledge that this enormously complicated machine was shunting around long trains of symbols inside it according to rules, and that these long trains of symbols were something like thoughts in my own head...something like them.]
 [Probably no one will ever understand the mysteries of intelligence and consciousness in a intuitive way. Each of us can understand people, and that is probably about as close as you can come.]
 
 # Slouching Towards Bethlehem (Joan Didion)
 [The future always looks good in the golden land, because no one remembers the past.]
 [I think we are well advised to keep on nodding terms with the people we used to be, whether we find them attractive company or not.]
 [People with self-respect have the courage of their mistake. They know the price of things.]
-[All that is constant about the California of my childhood is the rate at which it disappears.]
 [That was the year...when I was discovering that not all of the promises would be kept, that some things are in fact irrevocable and that it had counted after all...every mistake, every word, all of it.]
 
 # ===== MOVIES & TV =====
+
+# Saw II (2005)
+[What is the cure for cancer, Eric? The cure for death itself. The answer is immortality.]
 
 # Saw (2004)
 [Congratulations. You are still alive. Most people are so ungrateful to be alive. But not you. Not anymore.]
 [Hello Amanda. You don't know me, but I know you. I want to play a game.]
 
+# Cube (1997)
+[What is out there?\nBoundless human stupidity.\nI can live with that.]
+
 # Gattaca (1997)
 [For someone who was never meant for this world, I must confess I'm suddenly having a hard time leaving it.]
-[I got the better end of the deal. I only lent you my body. You lent me your dream.]
+[You lent me your dream.]
 [You want to know how I did it? I never saved anything for the swim back.]
 [They used to say a child conceived in love has a greater chance of happiness. They don't say that anymore.]
 
 # Scream (1996)
-[Movies don't create psychos. Movies just make psychos more creative!]
 [Did you really call the police? My mom and dad are gonna be so mad at me!]
+
+# The Usual Suspects (1995)
+[The greatest trick the devil ever pulled was convincing the world he didn't exist.]
+
+# Death Becomes Her (1992)
+[She was a homebreaker. She was a maneater. And she was a BAD actress.]
 
 # Twin Peaks (1990)
 [It's not so bad as long as you can keep the fear from your mind.]
+
+# Tron (1982)
+[END OF LINE]
 
 
 # ===== VIDEO GAMES =====
@@ -114,5 +131,6 @@
 
 # ===== MISC. =====
 [Hello world!]
-[This place is not a place of honor...no highly esteemed deed is commemorated here...nothing valued is here.]
+[This place is not a place of honor...]
+[As of 2002, Velveeta is sold in the US as "pasteurized prepared cheese product," a term not defined by the FDA.]
 
