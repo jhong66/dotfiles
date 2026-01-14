@@ -1,13 +1,14 @@
 #!/bin/bash
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[0;33m'
-GRAY='\033[0;90m'
-NC='\033[0m' # No Color
+RED='\e[0;31m'
+GREEN='\e[0;32m'
+YELLOW='\e[0;33m'
+GRAY='\e[0;90m'
+NC='\e[0m' # No Color
 
 C_LOGO_FRONT=$GREEN
 C_LOGO_BACK=$GRAY
+# Note: for ansi256 use '\e[38;5;[NUMBER]m'
 
 TERM_WIDTH=$(tput cols)
 
@@ -28,8 +29,7 @@ TMUX_LOGO='
                     /         ||          \                  
 '
 
-# TODO: Logo width is 61...make a more round number later
-# (will have to change color offsets)
+# TODO: Logo width is 61...make a more round number later?
 LOGO_WIDTH=$(printf "$TMUX_LOGO" | head -2 | wc -m)
 LOGO_WIDTH=$((LOGO_WIDTH - 2))
 
@@ -44,35 +44,31 @@ LOGO_MINI='
 MINI_LOGO_WIDTH=$(printf "$LOGO_MINI" | head -2 | wc -m)
 MINI_LOGO_WIDTH=$(( MINI_LOGO_WIDTH - 2 ))
 
-# TODO: automatically deal with color code offsets so positions don't change
-# Can use ansi 255 colors after this
-
-# -- highlight tmux in white (NC)
-# declare -a color_changes=(
-# "269 5"
-# "296 6"
-# "350 25"
-# "425 22"
-# "498 24"
-# "570 24"
-# )
-
 # -- highlight tmux in color
 declare -a color_changes=(
-"269 5"
-"299 6"
-"356 25"
-"434 22"
-"509 24"
-"586 24"
+"269 ${C_LOGO_FRONT}"
+"275 ${C_LOGO_BACK}"
+"285 ${C_LOGO_FRONT}"
+"292 ${C_LOGO_BACK}"
+"330 ${C_LOGO_FRONT}"
+"354 ${C_LOGO_BACK}"
+"394 ${C_LOGO_FRONT}"
+"414 ${C_LOGO_BACK}"
+"454 ${C_LOGO_FRONT}"
+"476 ${C_LOGO_BACK}"
+"515 ${C_LOGO_FRONT}"
+"540 ${C_LOGO_BACK}"
 )
+
+esc_offset=0
 
 for conf in "${color_changes[@]}"; do
 	p="${conf% *}"
-	offset="${conf#* }"
-	end=$((p+offset))
-	TMUX_LOGO=$(printf "%s${C_LOGO_FRONT}%s${C_LOGO_BACK}%s" \
-						 "${TMUX_LOGO:0:p}" "${TMUX_LOGO:p:offset}" "${TMUX_LOGO:end}")
+	p=$(( p + esc_offset ))
+	color="${conf#* }"
+
+	TMUX_LOGO=$(printf "%s${color}%s" "${TMUX_LOGO:0:p}" "${TMUX_LOGO:p}")
+	esc_offset=$(( esc_offset + ${#color} - 1 ))
 done
 
 center() {
