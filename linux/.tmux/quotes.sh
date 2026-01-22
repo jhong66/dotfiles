@@ -43,7 +43,7 @@
 [Love doesn't just sit there, like a stone, it has to be made, like bread; re-made all the time, made new.]
 
 # All You Need Is Kill (Hiroshi Sakurazaka)
-[If there's heaven, it's a cold place. A dark place. A lonely place.]
+[If there's a heaven, it's a cold place. A dark place. A lonely place.]
 [A machine doesn't get distracted. A machine doesn't cry. A machine wears the same bitter smile day in, day out.]
 
 # Roadside Picnic (Arkady & Boris Strugatsky)
