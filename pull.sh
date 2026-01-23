@@ -9,4 +9,4 @@ mkdir -p ./linux/.config
 cp -rf -t ./linux/.config ~/.config/tmux-powerline ~/.config/nvim
 
 mkdir -p ./linux/.tmux
-cp -rf -t ./linux/.tmux ~/.tmux/welcome.sh ~/.tmux/quotes.sh
+cp -rf -t ./linux/.tmux ~/.tmux/welcome.sh ~/.tmux/quotes.sh ~/.tmux/logos.sh
