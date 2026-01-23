@@ -75,6 +75,9 @@
 [Darkness is impossible to remember...Darkness never satisfies. Especially if it takes something away, which it almost always invariably does.]
 [there's no second i've lived you can't call your own]
 
+# Blood Meridian (Cormac McCarthy)
+[You can find meanness in the least of creatures, but when God made man the devil was at his elbow.]
+
 # ===== NON-FICTION BOOKS =====
 
 # Godel, Escher, Bach (Douglas R. Hofstadter)
@@ -131,6 +134,6 @@
 
 # ===== MISC. =====
 [Hello world!]
-[This place is not a place of honor...]
+[This place is not a place of honor...no esteemed deed is commemorated here...]
 [As of 2002, Velveeta is sold in the US as "pasteurized prepared cheese product," a term not defined by the FDA.]
 
