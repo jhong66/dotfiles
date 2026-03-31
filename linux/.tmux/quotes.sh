@@ -50,6 +50,9 @@
 [HAPPINESS, FREE, FOR EVERYONE, AND LET NO ONE BE FORGOTTEN!]
 [Look into my soul...Figure out yourself what I want - because I know it can't be bad!]
 
+# Neuromancer (William Gibson)
+[You fly away, honey. Towns like this are for people who like the way down.]
+
 # ===== OTHER FICTION BOOKS =====
 
 # Red Dragon (Thomas Harris)
@@ -77,6 +80,16 @@
 
 # Blood Meridian (Cormac McCarthy)
 [You can find meanness in the least of creatures, but when God made man the devil was at his elbow.]
+
+# Anna Karenina (Leo Tolstoy)
+[All happy families are alike; each unhappy family is unhappy in its own way.]
+[Reason could not discover love for the other, because it's unreasonable.]
+[Can this be faith?\nMy God, thank you!]
+[Respect was invented to cover the empty place where love should be.]
+[What are we all miserable for, when everything might be so happy?]
+[Our love, if it could be stronger, will be strengthened by there being something terrible in it.]
+[Yes it's true now, but that now won't last forever.]
+[With friends, one is well; but at home, one is better.]
 
 # ===== NON-FICTION BOOKS =====
 
