@@ -1,12 +1,15 @@
 #!/bin/bash
 
-rm -rf ./linux
+DIR=${1:-"./linux"}
+echo "Copying into: ${DIR}"
 
-mkdir -p ./linux
-cp -rf -t ./linux ~/.tmux.conf  ~/.vimrc 
+rm -rf ${DIR}
 
-mkdir -p ./linux/.config
-cp -rf -t ./linux/.config ~/.config/tmux-powerline ~/.config/nvim
+mkdir -p ${DIR}
+cp -rf ~/.tmux.conf ~/.vimrc ${DIR}
 
-mkdir -p ./linux/.tmux
-cp -rf -t ./linux/.tmux ~/.tmux/welcome.sh ~/.tmux/quotes.sh ~/.tmux/logos.sh
+mkdir -p ${DIR}/.config
+cp -rf ~/.config/tmux-powerline ~/.config/nvim ${DIR}/.config
+
+mkdir -p ${DIR}/.tmux
+cp -rf ~/.tmux/welcome.sh ~/.tmux/quotes.sh ~/.tmux/logos.sh ${DIR}/.tmux
